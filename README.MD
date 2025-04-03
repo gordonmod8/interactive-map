@@ -1,10 +1,19 @@
-# Demo of a globe and UI
+# Interactive-Map
+### A demonstration of a globe and UI
 
-To view, clone the repo, in VSCode, right click index.html > [open with Live Server]
+To interact:
 
-#vibecode produced with Gemini 2.5, thank you Google.
+1. Clone this repo
+2. In VSCode right click index.html > [open with Live Server]
+3. Drag and click, scroll as usual
+4. Double click red central dot to restore
+
+![screenshot](image.png)
+
+#vibecode session with Gemini 2.5, thank you Google.
 
 Notes:
+```
 HTML (index.html): Sets up the basic page structure, includes the CSS, creates the container and canvas elements, and loads the D3 library and your script.js.
 CSS (style.css): Styles the page to center the map container. The container uses vmin for responsive sizing, aspect-ratio: 1/1 to stay square, and importantly clip-path: circle(...) to create the circular viewport. The canvas is set to fill this container.
 JavaScript (script.js):
@@ -20,3 +29,4 @@ JavaScript (script.js):
     Animation (startAnimationLoop, animateFrame): Uses requestAnimationFrame and linear interpolation (d3.interpolate or simple lerp) to smoothly move the projection's current scale and rotation towards the target values set by user interactions or reset. This provides the jerk-limited feel.
     Rendering (render): Clears the canvas and redraws the map elements (sphere, graticule, land, center dot) based on the current projection state. It's called within the animation loop when changes occur.
     Data Loading (loadMapData): Asynchronously fetches the GeoJSON data using d3.json.
+```

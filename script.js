@@ -4,7 +4,7 @@
 const INITIAL_CENTER_LON_LAT = [-98.5795, 39.8283]; // Approx. center of contiguous US
 const MAX_GEO_DIAMETER_KM = 12760; // Approx. Earth diameter
 const MIN_GEO_DIAMETER_KM = 0.1;   // 100 meters
-const DATA_URL = 'data/ne_50m_urban_areas.geojson';
+const DATA_URL = 'data/ne_110m_land.geojson';
 const SPHERE_COLOR = "#aadaff"; // Match container background
 const LAND_COLOR = "#4e854e"; // A green color for land
 const GRATICULE_COLOR = "#cccccc";
