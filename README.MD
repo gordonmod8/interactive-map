@@ -10,7 +10,7 @@ To interact:
 
 ![screenshot](image.png)
 
-#vibecode session with Gemini 2.5, thank you Google.
+This project was product of a free #vibecode session with Gemini 2.5, thank you Google.
 
 Notes:
 ```
